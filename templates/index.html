@@ -138,8 +138,7 @@
 
         {% if prediction %}
             <div class="result-box">
-                <h2>Prediction: {{ prediction }}</h2>
-                <h3>Confidence: {{ confidence }}%</h3>
+                <h2>{{ result }}</h2>
                 <div class="confidence-bar" style="width: {{ confidence }}%;"></div>
             </div>
         {% endif %}
