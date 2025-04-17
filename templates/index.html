@@ -136,9 +136,10 @@
             <div id="loader"></div>
         </form>
 
-        {% if result %}
+        {% if prediction %}
             <div class="result-box">
-                <h2>{{ result }}</h2>
+                <h2>Prediction: {{ prediction }}</h2>
+                <h3>Confidence: {{ confidence }}%</h3>
                 <div class="confidence-bar" style="width: {{ confidence }}%;"></div>
             </div>
         {% endif %}
