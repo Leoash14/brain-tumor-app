@@ -71,7 +71,7 @@ def index():
             except Exception as e:
                 error = f"Error processing image: {e}"
 
-    return render_template('index.html', result=result,prediction=prediction, image_path=image_path, error=error)
+    return render_template('index.html', result=result,prediction=prediction, image_path=image_path, error=error,confidence=confidence)
 
 if __name__ == '__main__':
     app.run(debug=True)
